@@ -28,18 +28,19 @@ export default function Home() {
     <>
       <MaxWidthWrapper>
         <div className="py-20 mx-auto text-center flex flex-col items-center max-w-3xl">
-          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-            높은 품질의 <span className="text-blue-600">디지털</span> 마켓
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl break-keep">
+            당신의 코드가 값어치를 가질 수 있도록{" "}
+            <span className="text-blue-600">디지털</span> 마켓에서 거래하세요
           </h1>
-          <p className="mt-6 text-lg max-w-prose text-muted-foreground">
-            CDM에 오신 것을 환영합니다. 스스로 개발한 소중한 자산을 판매하며
-            더욱 양질의 코드가 거래될 수 있습니다.
+          <p className="mt-6 text-lg max-w-prose text-muted-foreground break-keep">
+            스스로 개발한 소중한 자산을 판매하며 더욱 양질의 코드가 개발될 수
+            있습니다.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 mt-6">
             <Link href="/products" className={buttonVariants()}>
-              거래조회
+              거래하기
             </Link>
-            <Button variant={"ghost"}>품질을 보증합니다 &rarr;</Button>
+            <Button variant={"ghost"}>품질보증 &rarr;</Button>
           </div>
         </div>
       </MaxWidthWrapper>
@@ -62,7 +63,7 @@ export default function Home() {
                   <h3 className="text-base font-medium text-gray-900">
                     {perk.name}
                   </h3>
-                  <p className="mt-3 text-sm text-muted-foreground">
+                  <p className="mt-3 text-sm text-muted-foreground break-keep">
                     {perk.description}
                   </p>
                 </div>
