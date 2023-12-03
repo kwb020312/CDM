@@ -18,10 +18,10 @@ const start = async () => {
   app.use((req, res) => nextHandler(req, res));
 
   nextApp.prepare().then(() => {
-    payload.logger.info("Next.js 실행됨");
+    // payload.logger.info("Next.js 실행됨");
 
     app.listen(PORT, async () => {
-      payload.logger.info(`Next.js URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`);
+      // payload.logger.info(`Next.js URL: ${process.env.NEXT_PUBLIC_SERVER_URL}`);
     });
   });
 };
