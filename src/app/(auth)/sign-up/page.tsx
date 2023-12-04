@@ -12,7 +12,7 @@ import { TAuthCredentialsValidator } from "@/lib/validators/account-credentials-
 
 const Page = () => {
   const AuthCredentialsValidator = z.object({
-    email: z.string().email(),
+    email: z.string().email({ message: "이메일 형식에 맞게 입력해주세요." }),
     password: z
       .string()
       .min(8, { message: "비밀번호는 반드시 8자 이상이어야 합니다." }),
